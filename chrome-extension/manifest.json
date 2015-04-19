@@ -1,0 +1,27 @@
+{
+  "manifest_version" : 2,
+  "name" : "Embedio",
+  "version" : "0.8.2",
+  "description" : "Save and manage embeds",
+  "background" : {
+    "scripts" : ["background.js"],
+    "persistent" : false
+  },
+  "page_action" : {
+    "default_icon" : "icon-save-embed-19.png",
+    "default_title" : "Save this embed!"
+  },
+  "permissions" : [
+    "tabs",
+    "webNavigation",
+    "notifications"
+  ],
+  "commands" : {
+    "toggle-feature-foo" : {
+      "suggested_key" : {
+        "default" : "Ctrl+Shift+O"
+      },
+      "description" : "Execute to save an embed."
+    }
+  }
+}
